@@ -1,0 +1,36 @@
+# Ignore PC/Mac/Linux (OS) related files
+*/*/*/.DS_Store/
+*/*/.DS_Store/
+*/.DS_Store/
+.DS_Store
+
+# Ignore log and pyc files
+*.log
+*.pyc
+
+# Ignore pycache folders
+*/*/*/__pycache__/
+*/*/__pycache__/
+*/__pycache__/
+
+# Ignore default database file
+db.sqlite3
+
+# Ignore media folder
+media
+
+# Ignore the local and production related requirement files
+requirements/local.txt
+requirements/staging.txt
+requirements/production.txt
+
+# Ignore the local and production related setting files
+config/settings/local.py
+config/settings/test.py
+config/settings/staging.py
+config/settings/production.py
+
+# Ignore the secret files
+secrets.json
+secrets_local.json
+secrets_prod.json
