@@ -18,20 +18,3 @@ db.sqlite3
 
 # Ignore media folder
 media
-
-# Ignore the local and production related requirement files
-requirements/local.txt
-requirements/test.txt
-requirements/staging.txt
-requirements/production.txt
-
-# Ignore the local and production related setting files
-config/settings/local.py
-config/settings/test.py
-config/settings/staging.py
-config/settings/production.py
-
-# Ignore the secret files
-secrets_local.json
-secrets_test.json
-secrets_stag.json
