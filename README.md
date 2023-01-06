@@ -3,9 +3,9 @@ Datanario is a (will be a) platform where people can communicate, collaborate an
 
 Datanario is the name of a data-driven scenario. If a scenario can be explained with data-driven figures and graphs, then it is not a scenario anymore but a datanario. So, in a nutshell, datanario is a new term for these kinds of scenarios. 
 
-Datanario's first aim is to provide solutions for e-commerce companies. The reason behind this is that the sustainability issue in the world is obvious and there are optimisation needs in this field. Datanario aims to provide solutions to these optimisation problems, hence to the sustainability issues in this domain.
+Datanario's first aim is to provide solutions with natural language processing (a sub-field of machine learning) for media and e-commerce companies. The reason behind this is that human feelings and thoughts are crucial to understanding business and solving its problems. Hence, these issues can be solved by machine learning algorithms and data-driven scenarios (aka datanarios) in this field. 
 
-The core functionalities of this platform are being developed openly here on GitHub so that especially SMEs and individuals can get the maximum benefit of it. In this way, we can all create a difference to make our world a better place!
+The core functionalities of this platform are being developed openly here on GitHub so that especially SMEs and individuals can get the maximum benefit from it. This way, we can all make a difference to make our world better!
 
 **About the license:** This project is being developed under the [GNU AFFERO GENERAL PUBLIC LICENSE](README.md), which means that when you make a change in the code, you must publish your changes publicly. To learn more about this license, please refer to [README file here](README.md).
 
