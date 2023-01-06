@@ -23,6 +23,10 @@ ALLOWED_HOSTS = get_secret('ALLOWED_HOSTS')
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+INSTALLED_APPS += [
+        'accounts', # project app
+    ]
+
 DATABASES = {
     'default': {
         'ENGINE': get_secret("DB_ENGINE"),

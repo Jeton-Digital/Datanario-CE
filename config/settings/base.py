@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts', # project app
     'widget_tweaks', # third-party app
     'crispy_forms', # third-party app
     'crispy_bootstrap5', # third-party app
