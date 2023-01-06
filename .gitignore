@@ -18,3 +18,6 @@ db.sqlite3
 
 # Ignore media folder
 media
+
+# Ignore migration folders
+migrations
