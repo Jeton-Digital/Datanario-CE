@@ -21,3 +21,6 @@ media
 
 # Ignore migration folders
 migrations
+
+# Ignore python version file
+.python-version
