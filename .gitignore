@@ -21,6 +21,7 @@ media
 
 # Ignore the local and production related requirement files
 requirements/local.txt
+requirements/test.txt
 requirements/staging.txt
 requirements/production.txt
 
@@ -31,6 +32,7 @@ config/settings/staging.py
 config/settings/production.py
 
 # Ignore the secret files
-secrets.json
 secrets_local.json
+secrets_test.json
+secrets_stag.json
 secrets_prod.json

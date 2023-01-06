@@ -1,21 +1,8 @@
 # settings/base.py
 import builtins
 import sys
-import json
+
 from pathlib import Path
-from django.core.exceptions import ImproperlyConfigured
-
-# JSON-based secrets module
-with open('secrets.json') as f: secrets = json.load(f)
-
-def get_secret(setting, secrets=secrets):
-    '''Get the secret variable or return explicit exception.''' 
-    try:
-        return secrets[setting] 
-    except KeyError:
-        error_msg = 'Set the {0} environment variable'.format(setting)
-        raise ImproperlyConfigured(error_msg)
-
 
 # BASE directory
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -55,19 +42,6 @@ TEMPLATES = [
     }, 
 ]
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = get_secret('SECRET_KEY')
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = get_secret('ALLOWED_HOSTS')
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -104,21 +78,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'config.urls'
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': get_secret("DB_NAME"),
-        'USER': get_secret("DB_USER"),
-        'PASSWORD': get_secret("DB_PASSWORD"),
-        'HOST': get_secret("DB_HOST"),
-        'PORT': get_secret("DB_PORT"),
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
