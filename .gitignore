@@ -35,4 +35,3 @@ config/settings/production.py
 secrets_local.json
 secrets_test.json
 secrets_stag.json
-secrets_prod.json
